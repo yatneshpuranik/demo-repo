@@ -1,7 +1,7 @@
 const products = [
   {
     _id: '1',
-    name: 'Airpods Wireless Bluetooth Headphones',
+    name: 'Airpods Wireless Headphones',
     image: '/images/airpods.jpg',
     description:
       'Bluetooth technology lets you connect it with compatible devices wirelessly. High-quality AAC audio offers immersive listening experience. Built-in microphone allows you to take calls while working.',
@@ -77,6 +77,34 @@ const products = [
     rating: 4.7,
     numReviews: 25,
   },
+  {
+  _id: '7',
+  name: ' DualSense Wireless Controller',
+  image: '/images/playstation.jpg', // you can change later
+  description:
+    'Discover a deeper, highly immersive gaming experience with the innovative new PS5 controller featuring haptic feedback and dynamic trigger effects.',
+  brand: 'Sony',
+  category: 'Electronics',
+  price: 69.99,
+  countInStock: 15,
+  rating: 4.6,
+  numReviews: 40,
+},
+
+{
+  _id: '8',
+  name: 'Sony 3D Wireless Headset',
+  image: '/images/playstation.jpg', // you can change later
+  description:
+    'Enjoy a seamless wireless experience with the official PS5 headset, offering 3D Audio support and dual noise-cancelling microphones for crystal-clear chat.',
+  brand: 'Sony',
+  category: 'Electronics',
+  price: 99.99,
+  countInStock: 12,
+  rating: 4.5,
+  numReviews: 18,
+}
+
 ];
 
 export default products;

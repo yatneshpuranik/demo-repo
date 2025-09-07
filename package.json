@@ -1,0 +1,32 @@
+{
+  "name": "demo-project",
+  "version": "1.0.0",
+  "description": "eCommerce with MERN stack ",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "client": "npm start --prefix frontend",
+    "dev": " concurrently \" npm run server \" \"npm run client \""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yatneshpuranik/demo-repo.git"
+  },
+  "author": "Yatnesh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yatneshpuranik/demo-repo/issues"
+  },
+  "homepage": "https://github.com/yatneshpuranik/demo-repo#readme",
+  "dependencies": {
+    "dotenv": "^17.2.2",
+    "env": "^0.0.2",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "nodemon": "^3.1.10"
+  }
+}
