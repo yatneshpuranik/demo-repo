@@ -1,6 +1,5 @@
 const products = [
   {
-    _id: '1',
     name: 'Airpods Wireless Headphones',
     image: '/images/airpods.jpg',
     description:
@@ -13,7 +12,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: '2',
     name: 'Amazon Alexa Smart Speaker',
     image: '/images/alexa.jpg',
     description:
@@ -26,7 +24,6 @@ const products = [
     numReviews: 8,
   },
   {
-    _id: '3',
     name: 'Canon DSLR Camera',
     image: '/images/camera.jpg',
     description:
@@ -39,7 +36,6 @@ const products = [
     numReviews: 20,
   },
   {
-    _id: '4',
     name: 'Logitech Wireless Mouse',
     image: '/images/mouse.jpg',
     description:
@@ -52,7 +48,6 @@ const products = [
     numReviews: 9,
   },
   {
-    _id: '5',
     name: 'iPhone 14 Pro 256GB',
     image: '/images/phone.jpg',
     description:
@@ -65,7 +60,6 @@ const products = [
     numReviews: 32,
   },
   {
-    _id: '6',
     name: 'Sony PlayStation 5 Console',
     image: '/images/playstation.jpg',
     description:
@@ -78,7 +72,6 @@ const products = [
     numReviews: 25,
   },
   {
-  _id: '7',
   name: ' DualSense Wireless Controller',
   image: '/images/playstation.jpg', // you can change later
   description:
@@ -92,7 +85,6 @@ const products = [
 },
 
 {
-  _id: '8',
   name: 'Sony 3D Wireless Headset',
   image: '/images/playstation.jpg', // you can change later
   description:
