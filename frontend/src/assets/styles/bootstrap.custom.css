@@ -203,7 +203,7 @@ body {
   line-height: var(--bs-body-line-height);
   color: var(--bs-body-color);
   text-align: var(--bs-body-text-align);
-  background-color: var(--bs-body-bg);
+  background-color: var(#7b8a8b);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -256,7 +256,11 @@ h2,
     font-size: 2rem;
   }
 }
-
+.label-logo
+{
+  font-size: xx-large;
+  color: rgb(255, 255, 255);
+}
 h3,
 .h3 {
   font-size: calc(1.3rem + 0.6vw);
