@@ -56,24 +56,26 @@ const PlaceOrderScreen = () => {
           <ListGroup.Item>
             <h1> Shipping </h1>
             <p>
-              <strong> Address </strong> : {cart.shippingAddress.address} , { cart.shippingAddress.city},{cart.shippingAddress.pincode},{ ' ' },{cart.shippingAddress.country}
+              <strong> Address : </strong>  {cart.shippingAddress.address} , { cart.shippingAddress.city},{cart.shippingAddress.pincode},{ ' ' },{cart.shippingAddress.country}
             </p>
           </ListGroup.Item>
           <ListGroup.Item>
             <h1> Payment Method  </h1>
             <p>
-              <strong> Method :</strong>: {cart.paymentMethod}
+              <strong> Method :</strong> {cart.paymentMethod}
             </p>
           </ListGroup.Item>
           <ListGroup.Item>
             <h1> Order Items </h1>
             { cart.cartItems.length === 0 ? (
-              <Message> Your Cart Is Empty </Message>
+              <Message> Your Cart Is Empty {
+                <Link to ='/'>Add Items </Link>
+              }</Message>
             ) : ( 
               
                     <ListGroup variant="flush">
                     {cart.cartItems.map((item) => (
-                    <ListGroup.Item key={item.product}>
+                    <ListGroup.Item key={item._id}>
                     <Row>
                     <Col md={1}>
                     <Image src={item.image} alt={item.name} fluid rounded  />
@@ -127,9 +129,9 @@ const PlaceOrderScreen = () => {
       </Row>
     </ListGroup.Item>
 
-    {error && (
+    { error && (
       <ListGroup.Item>
-        <Message variant="danger">
+        <Message varient="danger">
           {error?.data?.message || error?.error || "Something went wrong"}
         </Message>
       </ListGroup.Item>

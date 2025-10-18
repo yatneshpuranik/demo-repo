@@ -24,6 +24,10 @@ const CartScreen = () => {
   {
     navigate('/login?redirect=/shipping')
   }
+  const addMoreHanler =  () =>
+  {
+     navigate('/');
+  }
   return (
     <Row>
       <Col md ={ 8 } >
@@ -63,15 +67,21 @@ const CartScreen = () => {
                      <Col md = {2}>
                      <Button type = 'button' variant='light'  onClick={ () => removeFromCartHandler( item._id )}> <FaTrash/></Button>
                      </Col>
-                   </Row>
+                     
 
+                   </Row>
+                 
                 </ListGroup.Item>
+                
+                           
               ))
             }
+            <Button type = 'button' variant='dark'  onClick={ addMoreHanler }>+ More Items </Button>
+
           </ListGroup>
         )
-        }
-        
+        }                  
+      
       </Col>
       <Col md = {4}>
       <Card>
